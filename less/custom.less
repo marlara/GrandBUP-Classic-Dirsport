@@ -6,8 +6,29 @@
  *
  * @brief Custom less and css to this theme.
  */
- body{
+body{
     font-family: 'Source Sans Pro', sans;
+}
+
+.rpwe-title {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.rpwe-title > a {
+	color: #0A539F;
+}
+
+.rpwe-title > a:hover, .rpwe-title > a:focus, .rpwe-title > a:active {
+	color: #fff;
+}
+
+.summary_title{
+	font-size: 18px;
+}
+
+.current_issue header {
+	margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
@@ -17,6 +38,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .journal-logo {
   max-height: none;
   border-radius: 10px;
+}
+
+.article-summary-cover {
+	margin: 0.5em;
+	height: 180px;
+	vertical-align: middle;
+	display: inline-flex;
 }
 
 .announcement-summary-date{
@@ -73,7 +101,7 @@ p, li, a, blockquote{
 	  background-color: #0A539F;
 	  background-image: url('/public/journals/3/always-grey.png');
 	}
-	.container-page{
+	main.page_index_journal > .container-page{
 	  background-color: #EFEFEF
 	}
 
@@ -90,4 +118,14 @@ p, li, a, blockquote{
 
 	}
 
+}
+
+/* SLIDER */
+
+.slick-slide img{
+	width: 100%;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: gray;
 }

@@ -29,7 +29,7 @@ class GrandBUPClassicDirsport extends ThemePlugin {
 		$this->setParent('childbupclassic');
 		#$this->modifyStyle('stylesheet', array('addLess' => array('less/custom.less')));
 		$this->addStyle('child-stylesheet', 'less/custom.less');
-		#$this->addScript('custom', 'js/custom.js');
+		$this->addScript('custom', 'js/custom.js');
 		
 	}
 
