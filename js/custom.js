@@ -36,3 +36,8 @@ $(document).ready(function(){
   ]
     });
   });
+
+$(document).ready(function(){
+  $('.journal_summary > h2, .journal_summary > p').wrapAll('<div id="summary_text"/>');
+  $('.journal_summary').prepend('<img id="summary_image" src="https://journals.buponline.com/public/journals/3/journalThumbnail_it_IT.png" />')
+});
