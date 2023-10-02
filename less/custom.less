@@ -10,15 +10,14 @@ body{
     font-family: 'Source Sans Pro', sans;
 }
 
-button {
-	background-color: #0A539F;
-	border: none;
-	padding: 0.5em;
-	color: white;
+.page_about_buttons > a {
+	margin: 1em;
 }
-
-button:hover, button:focus{
-	color: #91C2F5;
+  
+.page_about_buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .button_section {
@@ -34,6 +33,10 @@ button:hover, button:focus{
 	padding: 0.5em;
 	background-color: #EFEFEF;
 	border-radius: 10px;
+}
+
+#summary_text{
+	text-align: justify;
 }
 
 .rpwe-title {
@@ -153,6 +156,7 @@ p, li, a, blockquote{
 		background-color: #EFEFEF;
 		border-radius: 10px;
 		margin-bottom: 2%;
+		background-image: url(https://journals.buponline.com/public/site/images/admin/bg-paper.jpg)
 	}
 }
 
@@ -196,6 +200,7 @@ p, li, a, blockquote{
 	flex-direction: row;
 	display: flex;
 	gap: 1.5em;
+	flex-wrap: wrap;
 }
 
 .footer-image{

@@ -41,3 +41,26 @@ $(document).ready(function(){
   $('.journal_summary > h2, .journal_summary > p').wrapAll('<div id="summary_text"/>');
   $('.journal_summary').prepend('<img id="summary_image" src="https://journals.buponline.com/public/journals/3/journalThumbnail_it_IT.png" />')
 });
+
+$(document).ready(function(){
+  $('.responsive-slicker-sidebar').slick({
+      dots: true,
+infinite: false,
+speed: 300,
+slidesToShow: 2,
+slidesToScroll: 2,
+arrow: true,
+responsive: [
+  {
+    breakpoint: 1000,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+  });
+});
