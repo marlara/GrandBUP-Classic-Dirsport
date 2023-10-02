@@ -10,6 +10,22 @@ body{
     font-family: 'Source Sans Pro', sans;
 }
 
+button {
+	background-color: #0A539F;
+	border: none;
+	padding: 0.5em;
+	color: white;
+}
+
+button:hover, button:focus{
+	color: #91C2F5;
+}
+
+.button_section {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .description_label{
 	display: none;
 }
@@ -93,7 +109,6 @@ p, li, a, blockquote{
 
 .header {
 	  background-color: #0A539F;
-	  background-image: url('/public/journals/3/always-grey.png');
 	}
 
 .current_issue > .galleys {
@@ -109,10 +124,10 @@ p, li, a, blockquote{
 @media (min-width: 992px){
 	.header {
 	  background-color: #0A539F;
-	  background-image: url('/public/journals/3/always-grey.png');
 	}
 	main.page_index_journal > .container-page{
-	  background-color: #EFEFEF
+	  background-color: #EFEFEF;
+	  background-image: url(https://journals.buponline.com/public/site/images/admin/bg-paper.jpg);
 	}
 
 	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -208,6 +223,7 @@ p, li, a, blockquote{
 .page_collana {
 	display: flex;
 	padding: 0.5em;
+	flex-direction: column;
 }
 
 .text_section {
